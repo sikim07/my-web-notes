@@ -2,7 +2,8 @@
 1. tsconfig
 2. main page
 3. web editor page
-4. insert web editor(need to select editor)
+4. conect cloud DB
+5. insert web editor(need to select editor)
 
 
 -- want to show
