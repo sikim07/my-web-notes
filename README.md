@@ -1,9 +1,11 @@
 -- TODO
-1. tsconfig
-2. main page
-3. web editor page
-4. conect cloud DB
-5. insert web editor(need to select editor)
+1. ~~prettier~~
+2. ~~eslintrc~~
+3. tsconfig
+4. main page
+5. web editor page
+6. conect cloud DB
+7. insert web editor(need to select editor)
 
 
 -- want to show
