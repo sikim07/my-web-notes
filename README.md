@@ -1,7 +1,7 @@
 -- TODO
 1. ~~prettier~~
 2. ~~eslintrc~~
-3. tsconfig
+3. ~~tsconfig~~
 4. main page
 5. web editor page
 6. conect cloud DB
