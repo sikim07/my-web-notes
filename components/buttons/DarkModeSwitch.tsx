@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import classNames from 'classnames'
 
 const DarkModeSwitch = (): JSX.Element => {
     const [isDarkMode, setIsDarkMode] = useState(window.localStorage.theme === 'dark')
@@ -22,11 +23,13 @@ const DarkModeSwitch = (): JSX.Element => {
     }, [isDarkMode])
 
     return (
-        <div>
-            <div className="cursor-pointer" onClick={switchDarkMode}>
-                <div className="h-[25px] w-[40px] rounded-[20px] border border-solid border-[#333] dark:border-[#fff]">
-                    <div></div>
-                </div>
+        <div className="cursor-pointer" onClick={switchDarkMode}>
+            <div className="h-[25px] w-[40px] rounded-[20px] border border-solid border-[#333] p-[2px] dark:border-[#fff]">
+                <div
+                    className={classNames(
+                        'relative h-[20px] w-[20px] rounded-[10px] bg-black dark:bg-white',
+                        isDarkMode ? 'animate-actSlideRight' : 'animate-actSlideLeftBack'
+                    )}></div>
             </div>
         </div>
     )
