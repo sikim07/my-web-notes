@@ -4,7 +4,7 @@ import { ReactNode } from 'react'
 
 const LayoutMain = ({ children }: { children: ReactNode }): JSX.Element => {
     return (
-        <div>
+        <div className="bg-white text-black dark:bg-black dark:text-white">
             <HeaderMain />
             <main>{children}</main>
             <FooterMain />
