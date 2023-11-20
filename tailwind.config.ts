@@ -7,9 +7,24 @@ const config: Config = {
         './app/**/*.{js,ts,jsx,tsx,mdx}',
     ],
     theme: {
-        extend: {},
+        extend: {
+            keyframes: {
+                slideRight: {
+                    from: { left: '0px' },
+                    to: { left: '14.5px' },
+                },
+                slideLeftBack: {
+                    from: { left: '14.5px' },
+                    to: { left: '0px' },
+                },
+            },
+        },
+        animation: {
+            actSlideRight: 'slideRight 0.5s forwards',
+            actSlideLeftBack: 'slideLeftBack 0.5s forwards',
+        },
     },
     darkMode: 'class',
-    plugins: [],
+    plugins: [require('tailwindcss-animate')],
 }
 export default config
