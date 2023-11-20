@@ -1,8 +1,12 @@
+import { useRouter } from 'next/router'
 import { useMemo, useState } from 'react'
 import classNames from 'classnames'
 
 const DarkModeSwitch = (): JSX.Element => {
-    const [isDarkMode, setIsDarkMode] = useState(window.localStorage.theme === 'dark')
+    const router = useRouter()
+    const [isDarkMode, setIsDarkMode] = useState(() => {
+        if (router.isReady) return window.localStorage.theme === 'dark' ?? false
+    })
 
     const switchDarkMode = () => {
         if (window.localStorage.theme === 'dark') {
@@ -15,6 +19,7 @@ const DarkModeSwitch = (): JSX.Element => {
     }
 
     useMemo(() => {
+        if (!router.isReady) return
         if (window.localStorage.theme === 'dark') {
             document.documentElement.classList.add('dark')
         } else {
