@@ -1,54 +1,54 @@
 {
-  "root": true,
-  "settings": {
-      "next": {
-          "rootDir": ["apps/*/"]
-      },
-      "react": {
-          "version": "detect"
-      }
-  },
-  "env": {
-      "commonjs": true,
-      "node": true,
-      "browser": true,
-      "es6": true,
-      "jest": true
-  },
-  "extends": [
-    "next/core-web-vitals",
-      "eslint:recommended",
-      "plugin:@typescript-eslint/recommended",
-      "prettier",
-      "plugin:@next/next/recommended",
-      "next"
-  ],
-  "globals": {},
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-      "ecmaFeatures": {
-          "jsx": true
-      },
-      "ecmaVersion": 2018,
-      "sourceType": "module"
-  },
-  "plugins": ["react", "import", "react-hooks", "prefer-arrow", "@typescript-eslint"],
-  "ignorePatterns": ["node_modules/", "*.js", "*.jsx"],
-  "rules": {
-      "prefer-arrow/prefer-arrow-functions": [
-          "warn",
-          {
-              "disallowPrototype": true,
-              "singleReturnOnly": false,
-              "classPropertiesAllowed": false
-          }
-      ],
-      "prefer-arrow-callback": ["error", { "allowNamedFunctions": true }],
-      "func-style": ["error", "expression", { "allowArrowFunctions": true }],
-      "semi": "off",
-      "@typescript-eslint/semi": "off",
-      "@typescript-eslint/naming-convention": "off",
-      "@next/next/no-img-element": "off",
-      "@typescript-eslint/ban-ts-comment": "off"
-  }
+    "root": true,
+    "settings": {
+        "next": {
+            "rootDir": ["apps/*/"]
+        },
+        "react": {
+            "version": "detect"
+        }
+    },
+    "env": {
+        "commonjs": true,
+        "node": true,
+        "browser": true,
+        "es6": true,
+        "jest": true
+    },
+    "extends": [
+        "next/core-web-vitals",
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "prettier",
+        "plugin:@next/next/recommended",
+        "next"
+    ],
+    "globals": {},
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": ["react", "import", "react-hooks", "prefer-arrow", "@typescript-eslint"],
+    "ignorePatterns": ["node_modules/", "*.js", "*.jsx"],
+    "rules": {
+        "prefer-arrow/prefer-arrow-functions": [
+            "warn",
+            {
+                "disallowPrototype": true,
+                "singleReturnOnly": false,
+                "classPropertiesAllowed": false
+            }
+        ],
+        "prefer-arrow-callback": ["error", { "allowNamedFunctions": true }],
+        "func-style": ["error", "expression", { "allowArrowFunctions": true }],
+        "semi": "off",
+        "@typescript-eslint/semi": "off",
+        "@typescript-eslint/naming-convention": "off",
+        "@next/next/no-img-element": "off",
+        "@typescript-eslint/ban-ts-comment": "off"
+    }
 }
