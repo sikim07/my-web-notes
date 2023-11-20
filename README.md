@@ -9,6 +9,7 @@
    4-2-1. ~~set default layout~~
    4-2-2. ~~add darkmode~~
    4-3. main page contents (introduce)
+   4-3-1. typing effect function
 5. web editor page
 6. conect cloud DB
 7. insert web editor(need to select editor)
