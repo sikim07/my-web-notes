@@ -8,10 +8,13 @@
    4-2. ~~layout header main~~
    4-2-1. ~~set default layout~~
    4-2-2. ~~add darkmode~~
-5. ~~conect cloud DB~~
-6. web editor page
+5. ~~conect Mongo DB~~
+6. ~~set GET Test API~~
+7. ~~set POST Test API~~
 
-7. insert web editor(need to select editor)
+8. web editor page
+
+9. insert web editor(need to select editor)
 
 -- want to show
 
