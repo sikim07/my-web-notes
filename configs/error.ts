@@ -7,6 +7,14 @@ export const CF_ERROR_CODES = {
         code: 9001,
         message: '환경변수 조회 불가',
     },
+    DB_CONNECTION_UNDFINED: {
+        code: 9002,
+        message: 'database connection 오류',
+    },
+    NO_QUERY_PARAMS: {
+        code: 9003,
+        message: 'query parameter 없음',
+    },
 }
 
 class Exception extends Error {
