@@ -1,7 +1,7 @@
 import { MongoClient, Db } from 'mongodb'
 import Exception, { CF_ERROR_CODES } from '@/configs/error'
 
-export async function connectToDatabase() {
+const connectToDatabase = async () => {
     const uri: string | undefined = process.env.DB_CONNECT_URI
     if (!uri) {
         throw new Exception(CF_ERROR_CODES.ENV_UNDEFINED)
@@ -17,3 +17,5 @@ export async function connectToDatabase() {
         console.error(e)
     }
 }
+
+export default connectToDatabase

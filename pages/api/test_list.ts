@@ -1,5 +1,5 @@
 import Exception, { CF_ERROR_CODES } from '@/configs/error'
-import { connectToDatabase } from '@/lib/mongodb'
+import connectToDatabase from '@/lib/mongodb'
 import { Db } from 'mongodb'
 import { NextApiRequest, NextApiResponse } from 'next/types'
 
