@@ -1,7 +1,7 @@
-import Exception, { CF_ERROR_CODES } from '@/configs/error'
-import connectToDatabase from '@/lib/mongodb'
-import { Db } from 'mongodb'
 import { NextApiRequest, NextApiResponse } from 'next/types'
+import { Db } from 'mongodb'
+import connectToDatabase from '@/lib/mongodb'
+import Exception, { CF_ERROR_CODES } from '@/configs/error'
 
 const handler = async (request: NextApiRequest, response: NextApiResponse) => {
     const connection = await connectToDatabase()
