@@ -8,7 +8,7 @@ const handler = async (request: NextApiRequest, response: NextApiResponse) => {
     const database: Db | undefined = connection?.database
     if (database === undefined) throw new Exception(CF_ERROR_CODES.DB_CONNECTION_UNDFINED)
 
-    const collection = database.collection('Test1')
+    const collection = database.collection('test1')
 
     if (request.method === 'GET') {
         const results = await collection.find({}).limit(10).toArray()

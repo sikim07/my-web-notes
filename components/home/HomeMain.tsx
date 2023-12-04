@@ -4,7 +4,7 @@ const HomeMain = (): JSX.Element => {
     const [test, setTest] = useState()
     useEffect(() => {
         const fetchData = async () => {
-            const results = await fetch('/api/test_list').then((response) => response.json())
+            const results = await fetch('/api/test1').then((response) => response.json())
             setTest(results)
         }
         fetchData()
